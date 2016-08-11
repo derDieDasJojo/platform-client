@@ -101,7 +101,7 @@
     "ng-showdown": "rjmackay/ng-showdown#patch-1",
     "ngGeolocation": "rjmackay/ngGeolocation",
     "nvd3": "^1.8.3",
-    "platform-pattern-library": "gustavpursche/platform-pattern-library#gh-pages",
+    "platform-pattern-library": "daimpad/platform-pattern-library#master",
     "selection-model": "jtrussell/angular-selection-model.git",
     "underscore": "^1.7.0"
   },
