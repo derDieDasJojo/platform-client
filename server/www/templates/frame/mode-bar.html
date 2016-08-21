@@ -22,14 +22,14 @@
                 </a>
             </li>
 
-            <li class="persist" ng-if="isActivityAvailable || hasManageSettingsPermission()" ng-class="{ active: activeMode === 'activity' }" data-message="customize">
+            <!--<li class="persist" ng-if="isActivityAvailable || hasManageSettingsPermission()" ng-class="{ active: activeMode === 'activity' }" data-message="customize">
                 <a href="/activity">
                     <svg class="iconic">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../img/iconic-sprite.svg#pulse"></use>
                     </svg>
                     <translate>views.activity</translate>
                 </a>
-            </li>
+						</li>-->
 
             <li class="tuck" ng-class="{ active: activeMode === 'settings' }" data-message="customize" ng-show="hasManageSettingsPermission()">
                 <a href="/settings">
@@ -54,12 +54,12 @@
         <ul class="account-menu">
         <!-- user account menu -->
 
-            <li>
+				<!--<li>
                 <a href="" ng-click="viewSupportLinks()">
                     <ng-include src="'templates/frame/ushahidi-logo.html'"></ng-include>
                     <span class="label" translate>app.support</span>
                 </a>
-            </li>
+						</li>-->
 
             <li ng-show="currentUser">
                 <a ng-click="logout()" data-modal="login">
@@ -77,14 +77,14 @@
                 </a>
             </li>
 
-            <li ng-show="!currentUser && canRegister">
+						<!--<li ng-show="!currentUser && canRegister">
                 <a ng-click="register()" data-modal="signup">
                     <svg class="iconic">
                         <use xlink:href="../../img/iconic-sprite.svg#person"></use>
                     </svg>
                     <translate translate="nav.register">Sign up</translate>
                 </a>
-            </li>
+						</li>-->
 
             <li ng-hide="currentUser">
                 <a ng-click="login()" data-modal="login">
@@ -95,14 +95,14 @@
                 </a>
             </li>
 
-            <li>
+						<!--<li>
                 <a ng-click="viewCollectionListing()">
                     <svg class="iconic">
                         <use xlink:href="../../img/iconic-sprite.svg#grid-three-up"></use>
                     </svg>
                     <span class="label" translate>nav.collections</span>
                 </a>
-            </li>
+						</li>-->
 
             <li ng-if="todo">
                 <a>
